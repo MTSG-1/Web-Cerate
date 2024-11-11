@@ -1,0 +1,95 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: #000000;
+    padding: 10px 20px;
+}
+.clickable-box{
+    text-decoration: none;
+    color: inherit;
+}
+.navbar-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar-list li {
+    display: inline;
+}
+
+.navbar-list a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-list a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+    
+
+.info {
+        color: #ffff;
+    
+    grid-gap: 20px;
+    grid-template-columns: repeat(2,1fr);
+}
+.boxes :hover{
+    background-color: #dddddd;
+    text-decoration: none;
+    color: inherit;
+    transition: background-color 0.5s ease; /* ให้การเปลี่ยนแปลงพื้นหลังเนียนขึ้น */
+}
+
+.boxes {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 40px;
+}
+.box {
+    background-color: #dddddd;
+    text-align: center;
+    padding: 2rem;
+   
+}
+.top-container{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 
+    'hero-sections hero-sections '
+    'hero-sections hero-sections '
+    
+    ;/* กำหนดพื้นที่การแสดงผล */
+}
+.hero-sections{
+    grid-area: hero-sections;
+    min-height: 400px;
+    background: url(https://www.internetmatters.org/wp-content/uploads/2022/08/roblox-new-word-mark.png);
+    padding: 3rem;
+    background-size: cover;
+    background-position: center;
+    /* root elenent หน่วยกำหนดขนาดของ font 16 px */
+    display: flex; /*การแสดงผลที่จัดเคลื่อน contect ฮอัตโนมัติ */
+    flex-direction: column;
+    align-items: start;
+    /* แสดงผลเนื้อหาชิดซ้ายก่อนเสมอ */
+    box-shadow: 0 1px Spx rgba(104, 104, 104, 0.8);
+}
+footer{
+    margin-top: 2rem;
+    background-color: rgb(70, 68, 68);
+    color: #dddddd;
+    padding: 1rem;
+    text-align: center;
+}
